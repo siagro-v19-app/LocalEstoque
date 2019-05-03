@@ -9,12 +9,6 @@ xmlns:t="sap.ui.table">
 			<Page showHeader="false" class="sapUiContentPadding" enableScrolling="false">
 				<content>
 					<t:Table id="tableLocalEstoque"
-						rows="{
-							path: '/LocalEstoques',
-							sorter: {
-								path: 'Descricao'
-							}
-						}"
 						selectionMode="Single"
 						selectionBehavior="Row"
 						class="sapUiSizeCondensed"
@@ -25,7 +19,7 @@ xmlns:t="sap.ui.table">
 							<Toolbar>
 								<Title text="Lista de Locais"/>
 								<ToolbarSpacer/>
-								<SearchField placeholder="Pesquisar local..." width="30%" search="filtraLocal"/>
+								<SearchField placeholder="Pesquisar descrição..." width="30%" search="filtraLocal"/>
 							</Toolbar>
 						</t:toolbar>
 						<t:columns>
